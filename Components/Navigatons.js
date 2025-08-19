@@ -8,6 +8,7 @@ import Signup from '../Scr/Signup';
 import Home from '../Scr/Home';
 import FlightDetailsScreen from '../Scr/FlightDetailsScreen';
 import ResultsScreen from '../Scr/ResultsScreen';
+import Splash from '../Scr/Splash';
 
 
 
@@ -16,6 +17,7 @@ const Stack = createNativeStackNavigator();
 function Navscreen() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="Home" component={Home} />
